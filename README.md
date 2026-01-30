@@ -1,57 +1,95 @@
-# 🕵️ People Tracking System
+# 🕵️‍♂️ People Detection & Re-Identification System
 
-Real-time **Person Detection, Tracking & Re-Identification System** using:
-- YOLOv8
-- DeepSORT
-- ResNet50
-- Streamlit
-- OpenCV
-- PyTorch
-
-Built for real-time webcam tracking with GPU acceleration support.
+> Real-time multi-person detection, tracking, and re-identification system built for real-world AI applications using deep learning, computer vision, and real-time inference pipelines.
 
 ---
 
-## 🚀 Features
-- Real-time person detection
-- Multi-person tracking
-- Person re-identification
-- Feature-based matching
-- GPU acceleration (CUDA)
-- Live dashboard
-- FPS monitoring
-- Historical tracking data
-- Streamlit web interface
+## 🚀 Overview
+
+This project is a **real-time AI system** that performs:
+- 👁️ Human detection  
+- 🧭 Multi-object tracking  
+- 🧠 Person re-identification  
+- 🧬 Feature-based identity matching  
+- 🎥 Real-time visualization  
+- ⚡ GPU-accelerated inference  
+
+Built as a **full AI pipeline**, not just a model demo.
+
+---
+
+## 🎯 Key Features
+
+- 🔍 Real-time person detection (YOLOv8)
+- 🧭 Multi-person tracking (DeepSORT)
+- 🧠 Deep feature extraction (ResNet50)
+- 🧬 Person re-identification system
+- 🎥 Live webcam processing
+- ⚡ GPU acceleration (CUDA support)
+- 📊 Live metrics (FPS, active people, total count)
+- 🖥 Interactive Streamlit dashboard
+- 🗂 Historical tracking data
+- 🔄 Feature fusion (deep + appearance features)
+- 🧩 Modular AI architecture
 
 ---
 
 ## 🧠 AI Architecture
 
-```text
-Camera → YOLOv8 → DeepSORT → ResNet50 Feature Extractor
-                      ↓
-              Re-ID Matching System
-                      ↓
-               Streamlit Dashboard
+📷 Camera Input
+↓
+🧠 YOLOv8 (Detection)
+↓
+🧭 DeepSORT (Tracking)
+↓
+🧬 ResNet50 (Feature Extraction)
+↓
+🧠 Re-Identification Engine
+↓
+🧬 Identity Matching System
+↓
+🖥 Streamlit Dashboard
 
 
-| Component | Tech      |
-| --------- | --------- |
-| Detection | YOLOv8    |
-| Tracking  | DeepSORT  |
-| Features  | ResNet50  |
-| Backend   | Python    |
-| UI        | Streamlit |
-| CV        | OpenCV    |
-| ML        | PyTorch   |
 
+---
 
-⚙️ Installation
+## 🛠 Tech Stack
 
-git clone https://github.com/YOUR_USERNAME/people-tracking-system.git
-cd people-tracking-system
+| Layer | Technology |
+|------|------------|
+| 🎯 Detection | YOLOv8 |
+| 🧭 Tracking | DeepSORT |
+| 🧠 Features | ResNet50 |
+| 🔥 ML Framework | PyTorch |
+| 👁️ CV | OpenCV |
+| 🖥 UI | Streamlit |
+| 📊 Data | NumPy, Pandas |
+| 🧬 Similarity | Cosine Similarity, Histogram Matching |
+
+---
+
+## ⚙️ Installation
+
+bash
+git clone https://github.com/Hamze-alseed/People-Detection-Re-identification.git
+cd People-Detection-Re-identification
 pip install -r requirements.txt
 
-▶️ Run
+## ▶️ Run the System's UI
 
 streamlit run app.py
+
+## The system provides:
+
+⚡ FPS monitoring
+
+👥 Active tracked persons
+
+🧮 Total unique persons
+
+💻 Device type (CPU / GPU)
+
+🎯 Detection confidence filtering
+
+🧠 Identity stability tracking
