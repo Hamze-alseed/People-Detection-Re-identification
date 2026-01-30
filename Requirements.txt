@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+numpy
+torch
+torchvision
+ultralytics
+deep-sort-realtime
+scikit-learn
+pandas
